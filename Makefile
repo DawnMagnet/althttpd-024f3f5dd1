@@ -1,11 +1,11 @@
-# Makefile for althttpd and utilities.  Summary of targets:
+# althttpd和实用程序的Makefile。目标摘要：
 #
-#    make althttpd                 <--  althttpd without OpenSSL
-#    make althttpsd                <--  althttpd including OpenSSL for TLS support
-#    make static-althttpd          <--  statically linked version of althttpd
-#    make static-althttpsd         <--  statically linked version of althttpsd
-#    make logtodb                  <--  Program to build SQLite database from log file
-#    make static-logtodb           <--  Statically linked version of the same
+#    make althttpd                 <--  不带OpenSSL的althttpd
+#    make althttpsd                <--  包含OpenSSL以支持TLS的althttpd
+#    make static-althttpd          <--  静态链接版本的althttpd
+#    make static-althttpsd         <--  静态链接版本的althttpsd
+#    make logtodb                  <--  从日志文件构建SQLite数据库的程序
+#    make static-logtodb           <--  静态链接版本的相同程序
 #
 default: althttpd althttpsd
 CC=cc

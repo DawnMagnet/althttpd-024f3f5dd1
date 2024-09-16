@@ -1,0 +1,3 @@
+manifest.uuid
+manifest
+VERSION
