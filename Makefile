@@ -13,6 +13,7 @@ CFLAGS=-Os -Wall -Wextra -I.
 
 VERSION.h:	VERSION manifest manifest.uuid mkversion.c
 	$(CC) -o mkversion mkversion.c
+	rm -r VERSION.h
 	./mkversion manifest.uuid manifest VERSION >VERSION.h
 
 althttpd:	althttpd.c VERSION.h
